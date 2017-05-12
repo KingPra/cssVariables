@@ -1,14 +1,8 @@
-/* Include Foundation */
-@import 'node_modules/foundation-sites/scss/foundation';
-
-@include foundation-global-styles;
-@include foundation-grid;
-
 //  declare css variables on root-the highest level
 :root {
   --base: #ffc600;
   --spacing: 10px;
-  --blur: 10px;
+  --blur: 5px;
 }
 
 img {

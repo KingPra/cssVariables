@@ -21,13 +21,13 @@
   });
 
   gulp.task('css', () => {
-      return gulp.src('scss/style.scss')
+      return gulp.src('scss/*.scss')
         .pipe(sass())
         .pipe(gulp.dest('docs/'));
   });
 
   gulp.task('js', () => {
-      return gulp.src('js/app.js')
+      return gulp.src('js/*.js')
         .pipe(browser.browserify())
         .pipe(strip())
         .pipe(gulp.dest('docs/'));
